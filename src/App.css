@@ -1,33 +1,91 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Make sure the body takes up the full height of the viewport */
 }
 
-li {
-  list-style: none;
+.container {
+  width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
   padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button {
-  margin-left: 5px;
-  margin-right: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.addBtn {
-  background-color:blue;
+button:hover {
+  background-color: #0056b3;
 }
 
-.editBtn {
-  background-color: yellow;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.delBtn {
-  background-color: rgb(244, 95, 125);
-  color: black;
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
-input {
-  padding: 9px 25px;
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todo-item button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-item button:hover {
+  background-color: #c82333;
 }

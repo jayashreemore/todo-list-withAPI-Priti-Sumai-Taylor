@@ -42,10 +42,3 @@ function TodoItem({ todo, onDelete, onSave, onToggleCompletion }) {
     );
 }
 export default TodoItem;
-
-
-
-
-
-
-
